@@ -1,0 +1,117 @@
+.contact {
+  //   background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+
+  &__title {
+    font-family: $font-raleway;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  &__instruction {
+    font-family: $font-raleway;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    .detail {
+      font-family: $font-open-sans;
+      color: $color-grey;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    img {
+      transform: translateY(40%);
+      margin-right: 10px;
+    }
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .form__field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-family: $font-open-sans;
+      color: $color-primary;
+      font-size: 0.9em;
+      letter-spacing: 3.28px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid $color-grey;
+      height: 50px;
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.contact__consent {
+  margin-bottom: 40px;
+
+  .label__checkbox {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    input {
+      position: absolute;
+      height: 0;
+      width: 0;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked + .checkbox {
+        background-image: url("../../assets/Checkmark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .checkbox {
+      height: 24px;
+      flex-basis: 24px;
+      flex-shrink: 0;
+      border: 2px solid $color-grey;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    .consent__text {
+      font-family: $font-open-sans;
+      color: #707070;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.button {
+  font-family: $font-open-sans;
+  font-weight: bold;
+  align-self: center;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 30px;
+  background: $color-primary;
+  color: #fff;
+  cursor: pointer;
+}

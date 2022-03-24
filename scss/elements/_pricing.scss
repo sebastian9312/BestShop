@@ -1,0 +1,124 @@
+.pricing {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: $font-raleway;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pricing__box {
+  width: 340px;
+  margin: 30px auto;
+  border: 1px solid $color-redish;
+  border-radius: 18px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .pricing__details {
+    width: 50%;
+    .type {
+      font-family: $font-raleway;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .price {
+      font-family: $font-open-sans;
+      color: $color-redish;
+      font-size: 3em;
+    }
+  }
+
+  .pricing__items {
+    width: 50%;
+    list-style: none;
+
+    .item {
+      font-family: $font-open-sans;
+      font-size: 0.9em;
+      margin: 20px auto;
+      text-align: center;
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        background-image: url("../../assets/Checkmark.svg");
+        width: 11px;
+        height: 11px;
+        color: $color-green;
+      }
+      &--not {
+        color: $color-grey;
+      }
+      &--not::before {
+        content: "x";
+        color: $color-redish;
+        display: inline-block;
+        margin-right: 10px;
+        background-image: none;
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+
+  .pricing__btn {
+    display: inline-block;
+    padding: 18px 56px;
+    border-radius: 32px;
+    text-decoration: none;
+    font-family: $font-open-sans;
+    font-size: 0.9em;
+    background: $color-redish;
+    color: #fff;
+  }
+}
+
+.pricing__box--professional {
+  width: 380px;
+  border: 1px solid $color-primary;
+  box-shadow: 5px 10px 27px #07ace629;
+
+  .pricing__details {
+    .price {
+      color: $color-primary;
+    }
+    .limited {
+      font-family: $font-raleway;
+    }
+  }
+  .pricing__btn {
+    background: $color-primary;
+  }
+}
+
+.pricing__box--premium {
+  border: 1px solid $color-green;
+  .pricing__details {
+    .price {
+      color: $color-green;
+    }
+    .limited {
+      font-family: $font-raleway;
+    }
+  }
+  .pricing__btn {
+    background: $color-green;
+  }
+}

@@ -1,0 +1,70 @@
+.stats {
+  font-family: $font-raleway;
+
+  &__title {
+    font-weight: normal;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+
+.stats__single--person,
+.stats__single--eye,
+.stats__single--catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+
+  .circle {
+    position: relative;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+  }
+
+  .stats__num {
+    margin-top: 15px;
+    letter-spacing: 6px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .stats__description {
+    margin-top: 20px;
+    color: $color-grey;
+  }
+}
+
+.stats__single--person {
+  .circle {
+    background: $color-redish;
+    .icon {
+      position: absolute;
+      top: 5px;
+      left: 30px;
+    }
+  }
+}
+
+.stats__single--eye {
+  .circle {
+    background: $color-primary;
+    .icon {
+      position: absolute;
+      top: 12px;
+      left: 22px;
+    }
+  }
+}
+
+.stats__single--catalog {
+  .circle {
+    background: $color-green;
+    .icon {
+      position: absolute;
+      top: 7px;
+      left: 30px;
+    }
+  }
+}

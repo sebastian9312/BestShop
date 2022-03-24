@@ -1,5 +1,12 @@
-@import "reset";
-@import "variables";
-@import "mixins";
+@import "generic/reset";
+
+@import "settings/mixins";
+@import "settings/variables";
 
 @import "elements/header";
+@import "elements/hero";
+@import "elements/stats";
+@import "elements/benefits";
+@import "elements/pricing";
+@import "elements/contact";
+@import "elements/footer";
