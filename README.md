@@ -3,7 +3,8 @@ Responsive website with a built-in calculator to convert the price of the produc
 
 ## General info
 Responsive website styled with SASS. 
-Calculator built into the application has written as a Constructor function which allowed me improve knowledge about prototypes.
+Calculator built into the application has written as a Constructor function which allowed me improve knowledge about prototypes 
+and learn JS on a slightly deeper level.
 
 ## Technologies
 Project is created with:
